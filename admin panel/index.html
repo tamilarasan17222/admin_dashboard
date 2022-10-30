@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+</head>
+<body>
+	<div class="main_panel col-12">
+
+
+<!-- desktop view -->
+
+<div class="web_view">
+		<div class="row web_view">
+			<div class="side_navbar" id="side_nav">
+				<div class="logo">
+					<a href=""><h4>ACME</h4></a>
+				</div>
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/home.png">Home
+						</a>
+					</li>
+					<li class="dashboard">
+						<a href="">
+							<img src="images/dashboard.png">Dashboard
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/inbox.png">Inbox
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/product.png">Products
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/admin.png">Admin
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content_side" id="main_content">
+				<div class="top_bar">
+					<div class="row">
+						<div class="top_bar_left col-6">
+							<div class="row">
+								<div onclick="myFunction()" class="menu_bar">
+									<img  src="images/menu_bar.png">
+								</div>
+								<div class="search">
+									<div class="row">
+										<img src="images/search.png">
+										<p>Search transaction, invoices or help</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="top_bar_right col-6">
+							<div class="row">
+								<div class="mobile-search">
+									<img src="images/search.png">
+								</div>
+								<div class="notification">
+									<img id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="images/notification.png">
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+										<div class="dropdown-item col-12">
+											<a class="noti d-flex" href="#">
+												<div class="col-2">
+													<img src="images/profile-pic-02.jpg">
+												</div>
+												<div class="col-7">
+													<h5>Bavid Kames</h5>
+													<p>Assigned you on the call with Sara</p>
+												</div>
+												<div class="col-3">
+													<p>2 min ago</p>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-item col-12">
+											<a class="noti d-flex"  href="#">
+												<div class="col-2">
+													<img src="images/profile-pic-06.jpg">
+												</div>
+												<div class="col-7">
+													<h5>Alexa Marry</h5>
+													<p>Marked the task New UI as done</p>
+												</div>
+												<div class="col-3">
+													<p>5 min ago</p>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-item col-12" href="#">
+											<a class="noti d-flex"  href="#">
+												<div class="col-2">
+													<img src="images/profile-pic-05.jpg">
+												</div>
+												<div class="col-7">
+													<h5>Eva Maria</h5>
+													<p>Added a new comment on Sales task</p>
+												</div>
+												<div class="col-3">
+													<p>10 min ago</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="name">
+									<a id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">
+										<div class="row">
+											<p style="color: #4D4F5C;">John Doe</p>
+											<img class="dropicon" src="images/drop_down.png">
+											<img class="profile_img" src="images/profile-pic-01.jpg">
+										</div>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right" id="button1" aria-labelledby="dropdownMenuButton1" style="margin-top: 22px !important;">
+										<div class="dropdown-item col-12" style="padding: 0;">
+											<a class="profile d-flex" href="#">
+												<div class="col-12 d-flex">
+													<div class="col-6">
+														<img src="images/profile.png">
+													</div>
+													<div class="col-6">
+														<p>My Profile</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-item col-12" style="padding: 0;">
+											<a class="profile d-flex" href="#">
+												<div class="col-12 d-flex">
+													<div class="col-6">
+														<img src="images/billing.png">
+													</div>
+													<div class="col-6">
+														<p>Billing</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-item col-12" style="padding: 0;">
+											<a class="profile d-flex" href="#">
+												<div class="col-12 d-flex">
+													<div class="col-6">
+														<img src="images/log_out.png">
+													</div>
+													<div class="col-6">
+														<p>Logout</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content_area">
+					<div class="col-12">
+						<div class="row">
+							<div class="overview col-6">
+								<h4>Overview</h4>
+							</div>
+							<div class="fund col-6">
+								<a class="button d-flex" href="">
+									<p class="p1">Add Fund</p>
+									<img src="images/plus.png">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid col-md-12 col-12">
+						<div class="row">
+							<div class="chats col-md-8 col-12 d-flex" style="margin-bottom: 30px;">
+								
+									<div class="col-md-6 col-12 line_chat">
+										<div class="cha">
+											<canvas id="myChart" style="width:100%;"></canvas>
+										</div>
+									</div>
+									<div class="col-md-6 col-12 round_chat">
+										<div class="rou" style="padding: 10px;">
+											<h4 style="font-size: 18px;">Sales Distribution</h4>
+											<center>
+											<canvas id="myChart1" style="max-width: 313px;max-height: 313px;"></canvas>
+											</center>
+										</div>
+									</div>
+								
+								
+							</div>
+							<div class="profile_grid col-md-4 col-12">
+								<center>
+									<div class="pofile_card col-md-12 col-12">
+										<div class="persnol_info" style="padding-top:30px;">
+											<img src="images/profile-pic-01.jpg">
+											<h4>Nick Herasimenka</h4>
+											<p>United States</p>
+											<div class="social_media">
+												<img src="images/twitter.png">
+												<img src="images/facebook.png">
+												<img src="images/linkedin.png">
+												<img src="images/whatsapp.png">
+											</div>
+										</div>
+										<div class="user_details" style="margin-top:30px;padding: 10px;">
+											<div class="row">
+												<div class="head">
+													<h4>Our Users</h4>
+												</div>
+												<div>
+													<img src="images/menu-vertica.png">
+												</div>
+											</div>
+										</div>
+										<div class="user_info" style="margin-top:20px">
+											<div class="row">
+												<div class="user_img col-2">
+													<img src="images/profile-pic-03.jpg">
+												</div>
+												<div class="user_name col-6">
+													<h5>Drew James</h5>
+													<p>United States</p>
+												</div>
+												<div class="number col-4">
+													<p>Mobile : 8715674877</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="user_img col-2">
+													<img src="images/profile-pic-02.jpg">
+												</div>
+												<div class="user_name col-6">
+													<h5>Bavid Kames</h5>
+													<p>United States</p>
+												</div>
+												<div class="number col-4">
+													<p>Mobile : 8715674877</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="user_img col-2">
+													<img src="images/profile-pic-04.jpg">
+												</div>
+												<div class="user_name col-6">
+													<h5>Lavid Emes</h5>
+													<p>United States</p>
+												</div>
+												<div class="number col-4">
+													<p>Mobile : 8715674877</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</center>
+								<div class="video col-md-12 col-12">
+								<div class="row" style="justify-content: space-between;">
+									<h4 style="padding: 10px;">Product Video</h4>
+									<img src="images/menu-vertica.png">
+								</div>
+								<div>
+									<center>
+									<video src="https://res.cloudinary.com/codelife/video/upload/v1637805738/intro_l5ul1k.mp4" type="video/mp4" controls style="border-radius: 10px;max-width: 300px;max-height: 171px;">
+									</video>
+									</center>
+								</div>
+								</div>
+							</div>
+							<div class="tab col-md-8 col-12" >
+								<div class="table col-md-12 col-12">
+									<table style="width: 100%;">
+  										<tr style="background: #F5F6FA 0% 0% no-repeat padding-box;">
+  										  <th>Location</th>
+  										  <th>Views</th>
+  										  <th>Sales</th>
+  										  <th>Conversion</th>
+  										  <th>Total</th>
+  										</tr>
+  										<tr>
+  										  <td>Google</td>
+  										  <td>12000</td>
+  										  <td>687</td>
+  										  <td>30%</td>
+  										  <td>$22000</td>
+  										</tr>
+  										<tr>
+  										  <td>Facebook</td>
+  										  <td>21000</td>
+  										  <td>687</td>
+  										  <td>34%</td>
+  										  <td>$32000</td>
+  										</tr>
+  										<tr>
+  										  <td>Twitter</td>
+  										  <td>32000</td>
+  										  <td>687</td>
+  										  <td>45%</td>
+  										  <td>$44000</td>
+  										</tr>
+  										<tr>
+  										  <td>Email</td>
+  										  <td>35000</td>
+  										  <td>687</td>
+  										  <td>34%</td>
+  										  <td>$43000</td>
+  										</tr>
+  										<tr>
+  										  <td>Linkedin</td>
+  										  <td>23000</td>
+  										  <td>687</td>
+  										  <td>67%</td>
+  										  <td>$34000</td>
+  										</tr>
+  										<tr>
+  										  <td>Instagram</td>
+  										  <td>54000</td>
+  										  <td>687</td>
+  										  <td>56%</td>
+  										  <td>$12000</td>
+  										</tr>
+  									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+
+<!-- mobile view -->
+
+
+<div class="mobile_view">
+		<div class="row" style="overflow:hidden;">
+			<div class="side_navbar" id="side_nav1">
+				<div class="logo">
+					<a href=""><h4>ACME</h4></a>
+				</div>
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/home.png">Home
+						</a>
+					</li>
+					<li class="dashboard">
+						<a href="">
+							<img src="images/dashboard.png">Dashboard
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/inbox.png">Inbox
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/product.png">Products
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/admin.png">Admin
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content_side" id="main_content1">
+				<div class="top_bar">
+					<div class="row">
+						<div class="top_bar_left col-6">
+							<div class="row">
+								<div onclick="myFunction()" class="menu_bar">
+									<img  src="images/menu_bar.png">
+								</div>
+								<div class="search">
+									<div class="row">
+										<img src="images/search.png">
+										<!-- <p>Search transaction, invoices or help</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="top_bar_right col-6">
+							<div class="row">
+								<div class="mobile-search">
+									<img src="images/search.png">
+								</div>
+								<div class="notification">
+									<img id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="images/notification.png">
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+										<div class="dropdown-item col-12">
+											<a class="noti d-flex" href="#">
+												<div class="col-2">
+													<img src="images/profile-pic-02.jpg">
+												</div>
+												<div class="col-7">
+													<h5>Bavid Kames</h5>
+													<p>Assigned you on the call with Sara</p>
+												</div>
+												<div class="col-3">
+													<p>2 min ago</p>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-item col-12">
+											<a class="noti d-flex"  href="#">
+												<div class="col-2">
+													<img src="images/profile-pic-06.jpg">
+												</div>
+												<div class="col-7">
+													<h5>Alexa Marry</h5>
+													<p>Marked the task New UI as done</p>
+												</div>
+												<div class="col-3">
+													<p>5 min ago</p>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-item col-12" href="#">
+											<a class="noti d-flex"  href="#">
+												<div class="col-2">
+													<img src="images/profile-pic-05.jpg">
+												</div>
+												<div class="col-7">
+													<h5>Eva Maria</h5>
+													<p>Added a new comment on Sales task</p>
+												</div>
+												<div class="col-3">
+													<p>10 min ago</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="name">
+									<a id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">
+										<div class="row">
+										<!-- 	<p>John Doe</p>
+											<img class="dropicon" src="images/drop_down.png"> -->
+											<img class="profile_img" src="images/profile-pic-01.jpg">
+										</div>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right" id="button1" aria-labelledby="dropdownMenuButton1" style="margin-top: 22px !important;">
+										<div class="dropdown-item col-12" style="padding: 0;">
+											<a class="profile d-flex" href="#">
+												<div class="col-12 d-flex">
+													<div class="col-6">
+														<img src="images/profile.png">
+													</div>
+													<div class="col-6">
+														<p>My Profile</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-item col-12" style="padding: 0;">
+											<a class="profile d-flex" href="#">
+												<div class="col-12 d-flex">
+													<div class="col-6">
+														<img src="images/billing.png">
+													</div>
+													<div class="col-6">
+														<p>Billing</p>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="dropdown-item col-12" style="padding: 0;">
+											<a class="profile d-flex" href="#">
+												<div class="col-12 d-flex">
+													<div class="col-6">
+														<img src="images/log_out.png">
+													</div>
+													<div class="col-6">
+														<p>Logout</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content_area">
+					<div class="col-12">
+						<div class="row">
+							<div class="overview col-6">
+								<h4>Overview</h4>
+							</div>
+							<div class="fund col-6">
+								<a class="button d-flex" href="">
+									<p class="p1">Add Fund</p>
+									<img src="images/plus.png">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid col-md-12 col-12">
+						<div class="row">
+							<div class="chats col-md-8 col-12 d-flex" style="margin-bottom: 30px;">
+									<div class="col-md-6 col-12 line_chat">
+										<div class="cha">
+											<canvas id="myChart" style="width:100%;"></canvas>
+										</div>
+									</div>
+									<div class="col-md-6 col-12 round_chat">
+										<div class="rou" style="padding: 10px;">
+											<h4 style="font-size: 18px;">Sales Distribution</h4>
+											<canvas id="myChart1" style="width:100%;"></canvas>
+										</div>
+									</div>	
+							</div>
+							<div class="profile_grid col-md-4 col-12">
+								<center>
+									<div class="pofile_card col-md-12 col-12">
+										<div class="persnol_info" style="padding-top:30px;">
+											<img src="images/profile-pic-01.jpg">
+											<h4>Nick Herasimenka</h4>
+											<p>United States</p>
+											<div class="social_media">
+												<img src="images/twitter.png">
+												<img src="images/facebook.png">
+												<img src="images/linkedin.png">
+												<img src="images/whatsapp.png">
+											</div>
+										</div>
+										<div class="user_details" style="margin-top:30px;padding: 10px;">
+											<div class="row">
+												<div class="head">
+													<h4>Our Users</h4>
+												</div>
+												<div>
+													<img src="images/menu-vertica.png">
+												</div>
+											</div>
+										</div>
+										<div class="user_info" style="margin-top:20px">
+											<div class="row">
+												<div class="user_img col-2">
+													<img src="images/profile-pic-03.jpg">
+												</div>
+												<div class="user_name col-6">
+													<h5>Drew James</h5>
+													<p>United States</p>
+												</div>
+												<div class="number col-4">
+													<p>Mobile : 8715674877</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="user_img col-2">
+													<img src="images/profile-pic-02.jpg">
+												</div>
+												<div class="user_name col-6">
+													<h5>Bavid Kames</h5>
+													<p>United States</p>
+												</div>
+												<div class="number col-4">
+													<p>Mobile : 8715674877</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="user_img col-2">
+													<img src="images/profile-pic-04.jpg">
+												</div>
+												<div class="user_name col-6">
+													<h5>Lavid Emes</h5>
+													<p>United States</p>
+												</div>
+												<div class="number col-4">
+													<p>Mobile : 8715674877</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</center>
+								<div class="video col-md-12 col-12">
+								<div class="row" style="justify-content: space-between;">
+									<h4 style="padding: 10px;">Product Video</h4>
+									<img src="images/menu-vertica.png">
+								</div>
+								<div class="col-md-12 col-12">
+									<center>
+									<video src="https://www.youtube.com/watch?v=v6EjmbMgv80" type="video/mp4" controls style="border-radius: 10px;max-width: 300px;max-height: 171px;">
+									</video>
+									</center>
+								</div>
+								</div>
+							</div>
+							<div class="tab col-md-8 col-12">
+							<div class="table col-md-12 col-12" style="overflow: scroll;">
+									<table style="max-width: 100%;">
+  										<tr style="background: #F5F6FA 0% 0% no-repeat padding-box;">
+  										  <th>Location</th>
+  										  <th>Views</th>
+  										  <th>Sales</th>
+  										  <th>Conversion</th>
+  										  <th>Total</th>
+  										</tr>
+  										<tr>
+  										  <td>Google</td>
+  										  <td>12000</td>
+  										  <td>687</td>
+  										  <td>30%</td>
+  										  <td>$22000</td>
+  										</tr>
+  										<tr>
+  										  <td>Facebook</td>
+  										  <td>21000</td>
+  										  <td>687</td>
+  										  <td>34%</td>
+  										  <td>$32000</td>
+  										</tr>
+  										<tr>
+  										  <td>Twitter</td>
+  										  <td>32000</td>
+  										  <td>687</td>
+  										  <td>45%</td>
+  										  <td>$44000</td>
+  										</tr>
+  										<tr>
+  										  <td>Email</td>
+  										  <td>35000</td>
+  										  <td>687</td>
+  										  <td>34%</td>
+  										  <td>$43000</td>
+  										</tr>
+  										<tr>
+  										  <td>Linkedin</td>
+  										  <td>23000</td>
+  										  <td>687</td>
+  										  <td>67%</td>
+  										  <td>$34000</td>
+  										</tr>
+  										<tr>
+  										  <td>Instagram</td>
+  										  <td>54000</td>
+  										  <td>687</td>
+  										  <td>56%</td>
+  										  <td>$12000</td>
+  										</tr>
+  									</table>
+								</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<!-- <script>
+var xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: tru
+    }, { 
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    }, { 
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+</script> -->
+<script>
+var xValues = ["France", "Italy", "canada", "japan"];
+var yValues = [55, 49, 44, 24];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart1", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+      display: false
+  }
+});
+</script>
+<script>
+function myFunction() {
+	// web view
+	const side_bar = document.getElementById("side_nav");
+	const main_cont = document.getElementById("main_content")
+	if (side_bar.style.width === "0%" && main_cont.style.width === "100%") {
+		side_bar.style.width = "20%";
+		main_cont.style.width = "80%";
+		main_cont.style.borderRadius = "25px 0px 0px 0px";
+		side_bar.style.transition = "0.5s";
+		main_cont.style.transition = "0.5s";
+	}
+	else{
+		side_bar.style.width = "0%";
+		side_bar.style.transition = "0.5s";
+		main_cont.style.width = "100%";
+		main_cont.style.borderRadius = "0px";
+		main_cont.style.transition = "0.5s";
+	}
+
+	// mobile view
+
+	const side_bar1 = document.getElementById("side_nav1");
+	const main_cont1 = document.getElementById("main_content1")
+	if (side_bar1.style.width === "0%" && main_cont1.style.marginLeft === "0%") {
+		side_bar1.style.width = "85%";
+		side_bar1.style.zIndex = "0";
+		main_cont1.style.marginLeft = "85%";
+		side_bar1.style.transition = "0.5s";
+		main_cont1.style.transition = "0.5s";
+	}
+	else{
+		side_bar1.style.width = "0%";
+		side_bar1.style.zIndex = "-1";
+		side_bar1.style.transition = "0.5s";
+		main_cont1.style.marginLeft = "0%";
+		main_cont1.style.transition = "0.5s";
+	}
+}
+</script>
+
+
+</body>
+</html>
+
+<!-- <script>
+function myFunction() {
+  const x = document.getElementById("side_nav");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  const element = document.getElementById("main_content");
+  if (element.className == "content_side col-12") {
+    element.className = "content_side col-10";
+    document.getElementById("main_content").style.borderRadius = "25px 0px 0px 0px";	
+  } else {
+    element.className = "content_side col-12";
+    document.getElementById("main_content").style.borderRadius = "0px";	
+  }
+}
+</script> -->
