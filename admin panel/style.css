@@ -106,7 +106,7 @@ body{
 	float: right;
 }
 .top_bar .row .top_bar_right .row:hover{
-	background-color: green;
+	/*background-color: green;*/
 }
 .top_bar .row .top_bar_right .name{
 	margin-left: 30px;
