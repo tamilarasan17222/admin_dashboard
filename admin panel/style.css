@@ -46,10 +46,15 @@ body{
 	color: #fff;
 	text-decoration: none;
 	padding: 20px !important;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 .side_navbar ul .dashboard{
 	background-color: #3C3B54;
 	border-left: 3px solid #A3A0FB;
+}
+.side_navbar ul li:hover{
+	background-color: #3C3B54;
 }
 .side_navbar ul li a{
 	color: #fff;
@@ -100,6 +105,9 @@ body{
 	/*justify-content: space-between;*/
 	float: right;
 }
+.top_bar .row .top_bar_right .row:hover{
+	background-color: green;
+}
 .top_bar .row .top_bar_right .name{
 	margin-left: 30px;
 }
@@ -145,6 +153,10 @@ body{
 	background-color: #514DDC;
 	border-radius: 50%;
 	margin: 0;
+}
+.notification img:hover{
+	background-color: #fbfbfd;
+	border-radius: 50%;
 }
 .notification .dropdown-menu{
 	margin-top: 22px;
@@ -226,7 +238,7 @@ body{
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	border-radius: 10px;
 	opacity: 1;
-	margin-top: -391px;
+	margin-top: -319px;
 }
 .content_side .content_area .grid .profile_grid .pofile_card{
 	background: #FFFFFF 0% 0% no-repeat padding-box;
